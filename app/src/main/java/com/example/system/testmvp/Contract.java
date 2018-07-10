@@ -5,6 +5,7 @@ public interface Contract {
     interface View {
         String getField();
         void showText(String text);
+        void showToast(String message);
     }
 
     interface Presenter {
@@ -12,5 +13,6 @@ public interface Contract {
     }
 
     interface Model {
+        String getData(String text);
     }
 }
